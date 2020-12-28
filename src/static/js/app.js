@@ -1,4 +1,3 @@
-document.write("TTTTTTTTTTESTTTTTTTTTT");
 function App() {
     const { Container, Row, Col } = ReactBootstrap;
     return (
@@ -178,4 +177,4 @@ function ItemDisplay({ item, onItemUpdate, onItemRemoval }) {
     );
 }
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App />, document.write("TTTTTTTTTTESTTTTTTTTTT"), document.getElementById('root'));
