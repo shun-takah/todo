@@ -5,9 +5,12 @@ function App() {
             <Row>
                 <Col md={{ offset: 3, span: 6 }}>
                     <TodoListCard />
-                    {items.length === 0 && (
-                <p className="text-center">To Do List</p>
-                    )}
+                    <React.Fragment>
+            <AddItemForm onNewItem={onNewItem} />
+            {items.length === 0 && (
+                <p className="text-center">ToDo app</p>
+            )}
+        </React.Fragment>
                 </Col>
             </Row>
         </Container>
