@@ -51,6 +51,9 @@ function TodoListCard() {
 
     return (
         <React.Fragment>
+            {items.length === 0 && (
+                <p className="text-center">To Do List</p>
+            )}
             <AddItemForm onNewItem={onNewItem} />
             {items.length === 0 && (
                 <p className="text-center">No items yet! Add one above!</p>
@@ -178,4 +181,4 @@ function ItemDisplay({ item, onItemUpdate, onItemRemoval }) {
 }
 
 ReactDOM.render(<App />, document.getElementById('root'));
-document.write("TTTTTTTTTTESTTTTTTTTTT")
+document.write("To Do List")
