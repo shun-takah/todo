@@ -1,5 +1,4 @@
-document.write("Samurai");
-
+document.write("TTTTTTTTTTESTTTTTTTTTT");
 function App() {
     const { Container, Row, Col } = ReactBootstrap;
     return (
