@@ -5,6 +5,9 @@ function App() {
             <Row>
                 <Col md={{ offset: 3, span: 6 }}>
                     <TodoListCard />
+                    {items.length === 0 && (
+                <p className="text-center">To Do List</p>
+                    )}
                 </Col>
             </Row>
         </Container>
